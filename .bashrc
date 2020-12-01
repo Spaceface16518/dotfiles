@@ -97,6 +97,7 @@ alias np='nano -w PKGBUILD'
 alias more=less
 alias cat="bat"
 alias ls="exa"
+alias open="xdg-open"
 
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
@@ -151,4 +152,3 @@ ex ()
   fi
 }
 
-eval "$(starship init bash)"
