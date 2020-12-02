@@ -1,1 +1,9 @@
+# vi editing mode
 set editing-mode vi
+
+# tab completions
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+# disable alert bell
+set bell-style none
