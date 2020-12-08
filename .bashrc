@@ -103,6 +103,8 @@ if command -v exa &> /dev/null; then
 fi
 alias open="xdg-open"
 
+alias dc="docker-compose"
+
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 alias vi="nvim"
