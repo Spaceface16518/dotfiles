@@ -1,3 +1,7 @@
 [user]
 	email = amrit.rathie@gmail.com
 	name = Spaceface16518
+[core]
+	autocrlf = input
+[pull]
+	ff = only
