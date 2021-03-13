@@ -95,8 +95,12 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias cat="bat"
-alias ls="exa"
+if command -v bat &> /dev/null; then
+    alias cat="bat"
+fi
+if command -v exa &> /dev/null; then
+    alias ls="exa"
+fi
 alias open="xdg-open"
 
 export EDITOR="/usr/bin/nvim"
@@ -152,5 +156,11 @@ ex ()
   fi
 }
 
-eval "$(zoxide init bash)"
-
+# init zoxide
+if command -v &> /dev/null; then
+    eval "$(zoxide init bash)"
+fi
+# init thefuck
+if command -v &> /dev/null; then
+    eval "$(thefuck --alias)"
+fi
