@@ -1,5 +1,8 @@
 # vi editing mode
 set editing-mode vi
+set show-mode-in-prompt on
+set vi-cmd-mode-string :
+set vi-ins-mode-string ""
 
 # tab completions
 set show-all-if-ambiguous on
