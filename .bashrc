@@ -131,7 +131,7 @@ shopt -s histappend
 
 set -o vi
 
-source /usr/share/nvm/init-nvm.sh
+[[ -f /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
 
 #
 # # ex - archive extractor
