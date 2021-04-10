@@ -159,10 +159,15 @@ ex ()
 }
 
 # init zoxide
-if command -v &> /dev/null; then
+if command -v zoxide &> /dev/null; then
     eval "$(zoxide init bash)"
 fi
 # init thefuck
-if command -v &> /dev/null; then
+if command -v thefuck &> /dev/null; then
     eval "$(thefuck --alias)"
+fi
+# alias microk8s stuff
+if command -v microk8s &> /dev/null; then
+	alias kubectl="microk8s.kubectl"
+	alias helm="microk8s.helm3"
 fi
